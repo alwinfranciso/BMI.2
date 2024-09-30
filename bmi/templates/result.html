@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your BMI Result</h1>
+        <p>Your BMI is: <span id="bmi">{{ bmi }}</span></p>
+        <p>Gender: {{ gender }}</p>
+        <div class="bmi-bar-container">
+            <div class="bmi-bar" id="bmi-bar"></div>
+        </div>
+        <p id="bmi-category"></p>
+    </div>
+</body>
+</html>
